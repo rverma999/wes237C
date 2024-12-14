@@ -1,0 +1,161 @@
+
+
+================================================================
+== Synthesis Summary Report of 'dft'
+================================================================
++ General Information: 
+    * Date:           Sat Dec 14 13:57:25 2024
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        dft_baseline
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+---------+----------+------------+------------+-----+
+    |                     Modules                     |  Issue |       | Latency |  Latency  | Iteration|         |  Trip |          |         |          |            |            |     |
+    |                     & Loops                     |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|  BRAM   |    DSP   |     FF     |     LUT    | URAM|
+    +-------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+---------+----------+------------+------------+-----+
+    |+ dft                                            |  Timing|  -0.66|   524626|  5.246e+06|         -|   524627|      -|        no|  12 (4%)|  68 (30%)|  10153 (9%)|  9615 (18%)|    -|
+    | + dft_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_29_2  |  Timing|  -0.66|   524362|  5.244e+06|         -|   524362|      -|        no|   8 (2%)|  68 (30%)|   9864 (9%)|  9347 (17%)|    -|
+    |  o VITIS_LOOP_21_1_VITIS_LOOP_29_2              |      II|   7.30|   524360|  5.244e+06|        81|        8|  65536|       yes|        -|         -|           -|           -|    -|
+    |   + sin_or_cos_double_s                         |      II|   0.25|       33|    330.000|         -|        1|      -|       yes|   8 (2%)|  54 (24%)|   7089 (6%)|  6770 (12%)|    -|
+    | + dft_Pipeline_VITIS_LOOP_41_3                  |       -|   2.10|      261|  2.610e+03|         -|      261|      -|        no|        -|         -|   283 (~0%)|    95 (~0%)|    -|
+    |  o VITIS_LOOP_41_3                              |       -|   7.30|      259|  2.590e+03|         5|        1|    256|       yes|        -|         -|           -|           -|    -|
+    +-------------------------------------------------+--------+-------+---------+-----------+----------+---------+-------+----------+---------+----------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++---------------------+----------+
+| Interface           | Bitwidth |
++---------------------+----------+
+| imag_input_address0 | 8        |
+| imag_input_d0       | 32       |
+| imag_input_q0       | 32       |
+| real_input_address0 | 8        |
+| real_input_d0       | 32       |
+| real_input_q0       | 32       |
++---------------------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+----------+
+| Argument   | Direction | Datatype |
++------------+-----------+----------+
+| real_input | inout     | float*   |
+| imag_input | inout     | float*   |
++------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------+---------------------+---------+----------+
+| Argument   | HW Interface        | HW Type | HW Usage |
++------------+---------------------+---------+----------+
+| real_input | real_input_address0 | port    | offset   |
+| real_input | real_input_ce0      | port    |          |
+| real_input | real_input_we0      | port    |          |
+| real_input | real_input_d0       | port    |          |
+| real_input | real_input_q0       | port    |          |
+| imag_input | imag_input_address0 | port    | offset   |
+| imag_input | imag_input_ce0      | port    |          |
+| imag_input | imag_input_we0      | port    |          |
+| imag_input | imag_input_d0       | port    |          |
+| imag_input | imag_input_q0       | port    |          |
++------------+---------------------+---------+----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| Name                                            | DSP | Pragma | Variable    | Op   | Impl    | Latency |
++-------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| + dft                                           | 68  |        |             |      |         |         |
+|  + dft_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_29_2 | 68  |        |             |      |         |         |
+|    add_ln21_fu_225_p2                           | -   |        | add_ln21    | add  | fabric  | 0       |
+|    add_ln21_1_fu_243_p2                         | -   |        | add_ln21_1  | add  | fabric  | 0       |
+|    dmul_64ns_64ns_64_7_max_dsp_1_U33            | 11  |        | omega_mid2  | dmul | maxdsp  | 6       |
+|    dmul_64ns_64ns_64_7_max_dsp_1_U33            | 11  |        | x_assign    | dmul | maxdsp  | 6       |
+|    dmul_64ns_64ns_64_7_max_dsp_1_U33            | 11  |        | mul         | dmul | maxdsp  | 6       |
+|    dmul_64ns_64ns_64_7_max_dsp_1_U33            | 11  |        | mul1        | dmul | maxdsp  | 6       |
+|    dadddsub_64ns_64ns_64_7_full_dsp_1_U32       | 3   |        | sub         | dsub | fulldsp | 6       |
+|    dadddsub_64ns_64ns_64_7_full_dsp_1_U32       | 3   |        | add         | dsub | fulldsp | 6       |
+|    dmul_64ns_64ns_64_7_max_dsp_1_U33            | 11  |        | mul2        | dmul | maxdsp  | 6       |
+|    dmul_64ns_64ns_64_7_max_dsp_1_U33            | 11  |        | mul3        | dmul | maxdsp  | 6       |
+|    dadddsub_64ns_64ns_64_7_full_dsp_1_U32       | 3   |        | add1        | dsub | fulldsp | 6       |
+|    dadddsub_64ns_64ns_64_7_full_dsp_1_U32       | 3   |        | add2        | dsub | fulldsp | 6       |
+|    add_ln29_fu_278_p2                           | -   |        | add_ln29    | add  | fabric  | 0       |
+|   + sin_or_cos_double_s                         | 54  |        |             |      |         |         |
+|     Ex_V_fu_515_p2                              | -   |        | Ex_V        | add  | fabric  | 0       |
+|     add_ln214_fu_340_p2                         | -   |        | add_ln214   | add  | fabric  | 0       |
+|     mul_170s_53ns_170_5_1_U1                    | 18  |        | ret_V_5     | mul  | auto    | 4       |
+|     Mx_bits_V_1_fu_451_p2                       | -   |        | Mx_bits_V_1 | sub  | fabric  | 0       |
+|     Ex_V_3_fu_554_p2                            | -   |        | Ex_V_3      | sub  | fabric  | 0       |
+|     sub_ln1512_fu_581_p2                        | -   |        | sub_ln1512  | sub  | fabric  | 0       |
+|     mul_49ns_49ns_98_5_1_U2                     | 4   |        | r_V_4       | mul  | auto    | 4       |
+|     mul_49ns_49ns_98_5_1_U6                     | 4   |        | r_V_5       | mul  | auto    | 4       |
+|     mul_49ns_49ns_98_5_1_U7                     | 4   |        | r_V_7       | mul  | auto    | 4       |
+|     mul_56ns_52s_108_5_1_U8                     | 5   |        | r_V_9       | mul  | auto    | 4       |
+|     mul_49ns_44s_93_5_1_U9                      | 4   |        | r_V_10      | mul  | auto    | 4       |
+|     mul_42ns_33ns_75_2_1_U10                    | 4   |        | r_V_11      | mul  | auto    | 1       |
+|     mul_35ns_25ns_60_2_1_U11                    | 2   |        | r_V_12      | mul  | auto    | 1       |
+|     mul_64s_63ns_126_5_1_U12                    | 9   |        | r_V_14      | mul  | auto    | 4       |
+|     add_ln451_fu_1133_p2                        | -   |        | add_ln451   | add  | fabric  | 0       |
+|     add_ln451_1_fu_1212_p2                      | -   |        | add_ln451_1 | add  | fabric  | 0       |
+|     add_ln451_2_fu_1223_p2                      | -   |        | add_ln451_2 | add  | fabric  | 0       |
+|     add_ln461_fu_1299_p2                        | -   |        | add_ln461   | add  | fabric  | 0       |
+|     newexp_fu_1309_p2                           | -   |        | newexp      | sub  | fabric  | 0       |
+|  + dft_Pipeline_VITIS_LOOP_41_3                 | 0   |        |             |      |         |         |
+|    add_ln41_fu_116_p2                           | -   |        | add_ln41    | add  | fabric  | 0       |
++-------------------------------------------------+-----+--------+-------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++-------------------------------------------------+------+------+--------+----------------------------------+---------+--------+---------+
+| Name                                            | BRAM | URAM | Pragma | Variable                         | Storage | Impl   | Latency |
++-------------------------------------------------+------+------+--------+----------------------------------+---------+--------+---------+
+| + dft                                           | 12   | 0    |        |                                  |         |        |         |
+|   freq_real_U                                   | 4    | -    |        | freq_real                        | ram_1p  | auto   | 1       |
+|   freq_imag_U                                   | 4    | -    |        | freq_imag                        | ram_1p  | auto   | 1       |
+|  + dft_Pipeline_VITIS_LOOP_21_1_VITIS_LOOP_29_2 | 8    | 0    |        |                                  |         |        |         |
+|   + sin_or_cos_double_s                         | 8    | 0    |        |                                  |         |        |         |
+|     ref_4oPi_table_256_V_U                      | 8    | -    |        | ref_4oPi_table_256_V             | rom_1p  | auto   | 1       |
+|     fourth_order_double_sin_cos_K0_V_U          | -    | -    | pragma | fourth_order_double_sin_cos_K0_V | rom_1p  | lutram | 1       |
+|     fourth_order_double_sin_cos_K1_V_U          | -    | -    | pragma | fourth_order_double_sin_cos_K1_V | rom_1p  | lutram | 1       |
+|     fourth_order_double_sin_cos_K2_V_U          | -    | -    | pragma | fourth_order_double_sin_cos_K2_V | rom_1p  | lutram | 1       |
+|     fourth_order_double_sin_cos_K3_V_U          | -    | -    | pragma | fourth_order_double_sin_cos_K3_V | rom_1p  | lutram | 1       |
+|     fourth_order_double_sin_cos_K4_V_U          | -    | -    | pragma | fourth_order_double_sin_cos_K4_V | rom_1p  | lutram | 1       |
++-------------------------------------------------+------+------+--------+----------------------------------+---------+--------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+  No pragmas found
+
