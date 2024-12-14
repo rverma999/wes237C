@@ -1,0 +1,206 @@
+
+
+================================================================
+== Synthesis Summary Report of 'cordiccart2pol'
+================================================================
++ General Information: 
+    * Date:           Fri Dec 13 18:03:06 2024
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        cordic_baseline
+    * Solution:       solution1_baseline (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+------------+-----+
+    |      Modules     | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |           |            |     |
+    |      & Loops     | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |     LUT    | URAM|
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+------------+-----+
+    |+ cordiccart2pol  |     -|  0.30|       67|  670.000|         -|        1|     -|       yes|     -|  2 (~0%)|  2470 (2%)|  6405 (12%)|    -|
+    +------------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| r         | ap_none | 20       |
+| theta     | ap_none | 20       |
+| x         | ap_none | 20       |
+| y         | ap_none | 20       |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------+
+| Argument | Direction | Datatype                             |
++----------+-----------+--------------------------------------+
+| x        | in        | ap_fixed<20, 3, AP_TRN, AP_WRAP, 0>  |
+| y        | in        | ap_fixed<20, 3, AP_TRN, AP_WRAP, 0>  |
+| r        | out       | ap_fixed<20, 3, AP_TRN, AP_WRAP, 0>* |
+| theta    | out       | ap_fixed<20, 3, AP_TRN, AP_WRAP, 0>* |
++----------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| x        | x            | port    |
+| y        | y            | port    |
+| r        | r            | port    |
+| theta    | theta        | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+---------------+-------+--------+---------+
+| Name                                | DSP | Pragma | Variable      | Op    | Impl   | Latency |
++-------------------------------------+-----+--------+---------------+-------+--------+---------+
+| + cordiccart2pol                    | 2   |        |               |       |        |         |
+|   x_V_fu_385_p2                     | -   |        | x_V           | sub   | fabric | 0       |
+|   y_V_fu_391_p2                     | -   |        | y_V           | sub   | fabric | 0       |
+|   sub_ln1273_fu_468_p2              | -   |        | sub_ln1273    | sub   | fabric | 0       |
+|   ret_V_fu_488_p2                   | -   |        | ret_V         | sub   | fabric | 0       |
+|   sub_ln1273_1_fu_498_p2            | -   |        | sub_ln1273_1  | sub   | fabric | 0       |
+|   ret_V_1_fu_519_p2                 | -   |        | ret_V_1       | add   | fabric | 0       |
+|   add_ln1347_1_fu_525_p2            | -   |        | add_ln1347_1  | add   | fabric | 0       |
+|   sub_ln1273_2_fu_581_p2            | -   |        | sub_ln1273_2  | sub   | fabric | 0       |
+|   ret_V_2_fu_601_p2                 | -   |        | ret_V_2       | sub   | fabric | 0       |
+|   sub_ln1273_3_fu_618_p2            | -   |        | sub_ln1273_3  | sub   | fabric | 0       |
+|   ret_V_3_fu_646_p2                 | -   |        | ret_V_3       | add   | fabric | 0       |
+|   add_ln1347_2_fu_652_p2            | -   |        | add_ln1347_2  | add   | fabric | 0       |
+|   sub_ln1273_4_fu_705_p2            | -   |        | sub_ln1273_4  | sub   | fabric | 0       |
+|   ret_V_4_fu_729_p2                 | -   |        | ret_V_4       | sub   | fabric | 0       |
+|   sub_ln1273_5_fu_746_p2            | -   |        | sub_ln1273_5  | sub   | fabric | 0       |
+|   ret_V_5_fu_778_p2                 | -   |        | ret_V_5       | add   | fabric | 0       |
+|   add_ln1347_3_fu_784_p2            | -   |        | add_ln1347_3  | add   | fabric | 0       |
+|   sub_ln1273_6_fu_832_p2            | -   |        | sub_ln1273_6  | sub   | fabric | 0       |
+|   ret_V_6_fu_856_p2                 | -   |        | ret_V_6       | sub   | fabric | 0       |
+|   sub_ln1273_7_fu_873_p2            | -   |        | sub_ln1273_7  | sub   | fabric | 0       |
+|   ret_V_7_fu_905_p2                 | -   |        | ret_V_7       | add   | fabric | 0       |
+|   add_ln1347_4_fu_911_p2            | -   |        | add_ln1347_4  | add   | fabric | 0       |
+|   sub_ln1273_8_fu_1003_p2           | -   |        | sub_ln1273_8  | sub   | fabric | 0       |
+|   ret_V_8_fu_1027_p2                | -   |        | ret_V_8       | sub   | fabric | 0       |
+|   sub_ln1273_9_fu_1044_p2           | -   |        | sub_ln1273_9  | sub   | fabric | 0       |
+|   ret_V_9_fu_1076_p2                | -   |        | ret_V_9       | add   | fabric | 0       |
+|   add_ln1347_5_fu_1082_p2           | -   |        | add_ln1347_5  | add   | fabric | 0       |
+|   sub_ln1273_10_fu_1265_p2          | -   |        | sub_ln1273_10 | sub   | fabric | 0       |
+|   ret_V_10_fu_1289_p2               | -   |        | ret_V_10      | sub   | fabric | 0       |
+|   sub_ln1273_11_fu_1306_p2          | -   |        | sub_ln1273_11 | sub   | fabric | 0       |
+|   ret_V_11_fu_1338_p2               | -   |        | ret_V_11      | add   | fabric | 0       |
+|   add_ln1347_6_fu_1344_p2           | -   |        | add_ln1347_6  | add   | fabric | 0       |
+|   sub_ln1273_12_fu_1492_p2          | -   |        | sub_ln1273_12 | sub   | fabric | 0       |
+|   ret_V_12_fu_1516_p2               | -   |        | ret_V_12      | sub   | fabric | 0       |
+|   sub_ln1273_13_fu_1533_p2          | -   |        | sub_ln1273_13 | sub   | fabric | 0       |
+|   ret_V_13_fu_1565_p2               | -   |        | ret_V_13      | add   | fabric | 0       |
+|   add_ln1347_7_fu_1571_p2           | -   |        | add_ln1347_7  | add   | fabric | 0       |
+|   sub_ln1273_14_fu_1676_p2          | -   |        | sub_ln1273_14 | sub   | fabric | 0       |
+|   ret_V_14_fu_1700_p2               | -   |        | ret_V_14      | sub   | fabric | 0       |
+|   sub_ln1273_15_fu_1717_p2          | -   |        | sub_ln1273_15 | sub   | fabric | 0       |
+|   ret_V_15_fu_1749_p2               | -   |        | ret_V_15      | add   | fabric | 0       |
+|   add_ln1347_8_fu_1755_p2           | -   |        | add_ln1347_8  | add   | fabric | 0       |
+|   sub_ln1273_16_fu_1822_p2          | -   |        | sub_ln1273_16 | sub   | fabric | 0       |
+|   ret_V_16_fu_1846_p2               | -   |        | ret_V_16      | sub   | fabric | 0       |
+|   sub_ln1273_17_fu_1863_p2          | -   |        | sub_ln1273_17 | sub   | fabric | 0       |
+|   ret_V_17_fu_1895_p2               | -   |        | ret_V_17      | add   | fabric | 0       |
+|   add_ln1347_9_fu_1901_p2           | -   |        | add_ln1347_9  | add   | fabric | 0       |
+|   sub_ln1273_18_fu_2032_p2          | -   |        | sub_ln1273_18 | sub   | fabric | 0       |
+|   ret_V_18_fu_2056_p2               | -   |        | ret_V_18      | sub   | fabric | 0       |
+|   sub_ln1273_19_fu_2073_p2          | -   |        | sub_ln1273_19 | sub   | fabric | 0       |
+|   ret_V_19_fu_2105_p2               | -   |        | ret_V_19      | add   | fabric | 0       |
+|   add_ln1347_10_fu_2111_p2          | -   |        | add_ln1347_10 | add   | fabric | 0       |
+|   sub_ln1273_20_fu_2201_p2          | -   |        | sub_ln1273_20 | sub   | fabric | 0       |
+|   ret_V_20_fu_2225_p2               | -   |        | ret_V_20      | sub   | fabric | 0       |
+|   sub_ln1273_21_fu_2242_p2          | -   |        | sub_ln1273_21 | sub   | fabric | 0       |
+|   ret_V_21_fu_2274_p2               | -   |        | ret_V_21      | add   | fabric | 0       |
+|   add_ln1347_11_fu_2280_p2          | -   |        | add_ln1347_11 | add   | fabric | 0       |
+|   sub_ln1273_22_fu_2350_p2          | -   |        | sub_ln1273_22 | sub   | fabric | 0       |
+|   ret_V_22_fu_2374_p2               | -   |        | ret_V_22      | sub   | fabric | 0       |
+|   sub_ln1273_23_fu_2391_p2          | -   |        | sub_ln1273_23 | sub   | fabric | 0       |
+|   ret_V_23_fu_2423_p2               | -   |        | ret_V_23      | add   | fabric | 0       |
+|   add_ln1347_12_fu_2429_p2          | -   |        | add_ln1347_12 | add   | fabric | 0       |
+|   sub_ln1273_24_fu_2482_p2          | -   |        | sub_ln1273_24 | sub   | fabric | 0       |
+|   ret_V_24_fu_2506_p2               | -   |        | ret_V_24      | sub   | fabric | 0       |
+|   sub_ln1273_25_fu_2523_p2          | -   |        | sub_ln1273_25 | sub   | fabric | 0       |
+|   ret_V_25_fu_2555_p2               | -   |        | ret_V_25      | add   | fabric | 0       |
+|   add_ln1347_13_fu_2561_p2          | -   |        | add_ln1347_13 | add   | fabric | 0       |
+|   sub_ln1273_26_fu_2642_p2          | -   |        | sub_ln1273_26 | sub   | fabric | 0       |
+|   ret_V_26_fu_2666_p2               | -   |        | ret_V_26      | sub   | fabric | 0       |
+|   sub_ln1273_27_fu_2683_p2          | -   |        | sub_ln1273_27 | sub   | fabric | 0       |
+|   ret_V_27_fu_2766_p2               | -   |        | ret_V_27      | add   | fabric | 0       |
+|   add_ln1347_14_fu_2772_p2          | -   |        | add_ln1347_14 | add   | fabric | 0       |
+|   sub_ln1273_28_fu_2811_p2          | -   |        | sub_ln1273_28 | sub   | fabric | 0       |
+|   ret_V_28_fu_2851_p2               | -   |        | ret_V_28      | add   | fabric | 0       |
+|   add_ln813_2_fu_1393_p2            | -   |        | add_ln813_2   | add   | fabric | 0       |
+|   add_ln813_3_fu_1403_p2            | -   |        | add_ln813_3   | add   | fabric | 0       |
+|   add_ln813_5_fu_2165_p2            | -   |        | add_ln813_5   | add   | fabric | 0       |
+|   add_ln813_8_fu_1963_p2            | -   |        | add_ln813_8   | add   | fabric | 0       |
+|   add_ln813_12_fu_2889_p2           | -   |        | add_ln813_12  | add   | fabric | 0       |
+|   add_ln813_16_fu_2712_p2           | -   |        | add_ln813_16  | add   | fabric | 0       |
+|   add_ln813_20_fu_2910_p2           | -   |        | add_ln813_20  | add   | fabric | 0       |
+|   add_ln813_21_fu_2935_p2           | -   |        | add_ln813_21  | add   | fabric | 0       |
+|   add_ln813_22_fu_2916_p2           | -   |        | add_ln813_22  | add   | fabric | 0       |
+|   add_ln813_23_fu_2948_p2           | -   |        | add_ln813_23  | add   | fabric | 0       |
+|   sub_ln813_1_fu_3001_p2            | -   |        | sub_ln813_1   | sub   | fabric | 0       |
+|   add_ln813_17_fu_3007_p2           | -   |        | add_ln813_17  | add   | fabric | 0       |
+|   sub_ln813_2_fu_3020_p2            | -   |        | sub_ln813_2   | sub   | fabric | 0       |
+|   mac_muladd_16s_16s_32s_33_4_1_U3  | 1   |        | r_V_63        | mul   | dsp48  | 3       |
+|   mul_mul_16s_16s_32_4_1_U2         | 1   |        | r_V_64        | mul   | dsp48  | 3       |
+|   mac_muladd_16s_16s_32s_33_4_1_U3  | 1   |        | ret_V_30      | add   | dsp48  | 3       |
+|   sub_ln1049_fu_978_p2              | -   |        | sub_ln1049    | sub   | fabric | 0       |
+|   lsb_index_fu_1124_p2              | -   |        | lsb_index     | add   | fabric | 0       |
+|   sub_ln1052_fu_1145_p2             | -   |        | sub_ln1052    | sub   | fabric | 0       |
+|   add_ln1063_fu_1417_p2             | -   |        | add_ln1063    | add   | fabric | 0       |
+|   sub_ln1064_fu_1432_p2             | -   |        | sub_ln1064    | sub   | fabric | 0       |
+|   m_3_fu_1457_p2                    | -   |        | m_3           | add   | fabric | 0       |
+|   dsqrt_64ns_64ns_64_57_no_dsp_1_U1 | -   |        | d             | dsqrt | fabric | 56      |
+|   man_V_1_fu_3088_p2                | -   |        | man_V_1       | sub   | fabric | 0       |
+|   F2_fu_3108_p2                     | -   |        | F2            | sub   | fabric | 0       |
+|   add_ln570_fu_3120_p2              | -   |        | add_ln570     | add   | fabric | 0       |
+|   sub_ln570_fu_3126_p2              | -   |        | sub_ln570     | sub   | fabric | 0       |
++-------------------------------------+-----+--------+---------------+-------+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++----------------+--------------------------+--------------------------------------------------------+
+| Type           | Options                  | Location                                               |
++----------------+--------------------------+--------------------------------------------------------+
+| interface      | ap_ctrl_none port=return | cordic/cordiccart2pol.cpp:12 in cordiccart2pol, return |
+| interface      | ap_none port=x           | cordic/cordiccart2pol.cpp:13 in cordiccart2pol, x      |
+| interface      | ap_none port=y           | cordic/cordiccart2pol.cpp:14 in cordiccart2pol, y      |
+| interface      | ap_none port=r           | cordic/cordiccart2pol.cpp:15 in cordiccart2pol, r      |
+| interface      | ap_none port=theta       | cordic/cordiccart2pol.cpp:16 in cordiccart2pol, theta  |
+| pipeline       | II=1                     | cordic/cordiccart2pol.cpp:19 in cordiccart2pol         |
+| unroll         | factor=4                 | cordic/cordiccart2pol.cpp:70 in cordiccart2pol         |
+| loop_tripcount | min=16 max=16            | cordic/cordiccart2pol.cpp:71 in cordiccart2pol         |
++----------------+--------------------------+--------------------------------------------------------+
+
+
