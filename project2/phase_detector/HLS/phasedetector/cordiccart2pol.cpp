@@ -99,7 +99,7 @@ void cordiccart2pol(data_t x, data_t y, data_t * r,  data_t * theta)
     // Apply CORDIC scaling factor
     //doesnt work with ap_fixed *r = sqrt(org_x*org_x + org_y*org_y);
         // Convert to double before sqrt
-    double temp = (double)(org_x*org_x + org_y*org_y);
+    double temp = (double)((double)org_x*(double)org_x + (double)org_y*(double)org_y);
     *r = (data_t)sqrt(temp);
 
     //theta = atan(y,x);
