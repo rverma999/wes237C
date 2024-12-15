@@ -35,32 +35,33 @@ void bnn(DTYPE IN[SIZE], ITYPE ys[10])
 	   }
 
    memset(sum, 0, sizeof(sum));
-   for(int in = 0; in < 25; in++) {
-       for(int out_n = 0; out_n < 128; out_n++) {
+   for(int in = 0; in < 25; in++) { //each sample
+       for(int out_n = 0; out_n < 128; out_n++) { //neuron   128X25 = 3200
            unsigned int input_word = IN[in];
            unsigned int weight_word = w1[out_n * 25 + in];
            if (in == 24) {
                // Mask to keep only the upper 16 bits (valid data)
-               input_word &= 0xFFFF0000;
-               weight_word &= 0xFFFF0000;
+               //input_word &= 0xFFFF0000;
+               //weight_word &= 0xFFFF0000;
+               input_word &= 0x0000FFFF;
+               weight_word &= 0x0000FFFF;
            }
            xnor_result = ~(input_word ^ weight_word);
            sum[out_n] += __builtin_popcount(xnor_result);
-
-       }
+           if(in==0) printf("first layer : xnor_result=%x sum=",xnor_result,sum[out_n]);       }
    }
    for(int out_n = 0; out_n < 128; out_n++) {
-	   if(out_n<5)printf("Layer1_out[%d]  before processing sum_out = %d\n", out_n, sum[out_n]);
+	   if(out_n<2)printf("Layer1_out[%d]  before processing sum_out = %d\n", out_n, sum[out_n]);
        sum[out_n] = sum[out_n] * 2 - 784;
-
-       layer1_out[out_n] = sum[out_n] > 0 ? 1 : -1;
+       if(out_n<2)printf("Layer1_out[%d]  after processing sum_out = %d\n", out_n, sum[out_n]);
+       layer1_out[out_n] = sum[out_n] > 0 ? 1 : -1; //binaring
    }
 
-   for(int i = 0; i < 128; i++) {
-       if(i < 5) printf("Layer1_out[%d] = %d\n", i, layer1_out[i]);
-	   if(i<5)printf("Layer1_out[%d]  after processing sum_out = %d\n", i, sum[i]);
-       //printf("Layer1_out[%d] = %d\n", i, layer1_out[i]);
-   }
+//for(int i = 0; i < 128; i++) {
+//       if(i < 5) printf("Layer1_out[%d] = %d\n", i, layer1_out[i]);
+//	   if(i<5)printf("Layer1_out[%d]  after processing sum_out = %d\n", i, sum[i]);
+//       //printf("Layer1_out[%d] = %d\n", i, layer1_out[i]);
+//   }
 
    // Second Layer
    memset(sum, 0, sizeof(sum));

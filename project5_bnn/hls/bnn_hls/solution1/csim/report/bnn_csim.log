@@ -1,0 +1,358 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../bnn.cpp in debug mode
+   Generating csim.exe
+
+
+ *******************
+Sample weights:
+w1[0] = 1369938329
+w2[0] = 1913607555
+w3[0] = 3898795476
+w1[1] = 338570864
+w2[1] = 675556588
+w3[1] = 3841654544
+w1[2] = 3449824829
+w2[2] = 3902637308
+w3[2] = 1999377659
+w1[3] = 3240895963
+w2[3] = 1303398415
+w3[3] = 478627577
+w1[4] = 1476599616
+w2[4] = 2804841594
+w3[4] = 2610578576
+first layer : xnor_result=51a79999 sum=first layer : xnor_result=93ffd655 sum=first layer : xnor_result=8138e37b sum=first layer : xnor_result=b44b7162 sum=first layer : xnor_result=7c0e9614 sum=first layer : xnor_result=1b87051b sum=first layer : xnor_result=6a73dd41 sum=first layer : xnor_result=f494ef4e sum=first layer : xnor_result=54bb9211 sum=first layer : xnor_result=ae07e25d sum=first layer : xnor_result=3b137e06 sum=first layer : xnor_result=324906f1 sum=first layer : xnor_result=d45e68bd sum=first layer : xnor_result=d521a56 sum=first layer : xnor_result=1257ddd3 sum=first layer : xnor_result=58f131fe sum=first layer : xnor_result=6c12163c sum=first layer : xnor_result=dfe36ea3 sum=first layer : xnor_result=1f3e346a sum=first layer : xnor_result=143e16aa sum=first layer : xnor_result=14d5fc50 sum=first layer : xnor_result=a6b4cbff sum=first layer : xnor_result=d6eccd2f sum=first layer : xnor_result=9ef90027 sum=first layer : xnor_result=9007e166 sum=first layer : xnor_result=760fa71c sum=first layer : xnor_result=171b8f92 sum=first layer : xnor_result=de650c2d sum=first layer : xnor_result=b0a67a3d sum=first layer : xnor_result=33bc36f6 sum=first layer : xnor_result=eddfc1e1 sum=first layer : xnor_result=d7f27f76 sum=first layer : xnor_result=9d6d27f6 sum=first layer : xnor_result=44d968ca sum=first layer : xnor_result=e8ca0027 sum=first layer : xnor_result=61377eca sum=first layer : xnor_result=39d6f15d sum=first layer : xnor_result=b882a8e2 sum=first layer : xnor_result=7910301 sum=first layer : xnor_result=9f4b16df sum=first layer : xnor_result=f2acccb8 sum=first layer : xnor_result=b2de2d1a sum=first layer : xnor_result=b4701481 sum=first layer : xnor_result=8ad4374a sum=first layer : xnor_result=d30b60f4 sum=first layer : xnor_result=61914d1c sum=first layer : xnor_result=8d71854d sum=first layer : xnor_result=9fb0f8ea sum=first layer : xnor_result=a1661892 sum=first layer : xnor_result=3cf8df5d sum=first layer : xnor_result=4c0cb54 sum=first layer : xnor_result=7fee7758 sum=first layer : xnor_result=fed85424 sum=first layer : xnor_result=d4be9aa5 sum=first layer : xnor_result=4a8c95c7 sum=first layer : xnor_result=533dfbe3 sum=first layer : xnor_result=a099d17f sum=first layer : xnor_result=d7398162 sum=first layer : xnor_result=f6dc3a71 sum=first layer : xnor_result=ffece902 sum=first layer : xnor_result=b0660082 sum=first layer : xnor_result=65993d9f sum=first layer : xnor_result=5ff2ccfb sum=first layer : xnor_result=4bbe3407 sum=first layer : xnor_result=8086422 sum=first layer : xnor_result=aef9ac16 sum=first layer : xnor_result=e542c89 sum=first layer : xnor_result=42960833 sum=first layer : xnor_result=d2e787be sum=first layer : xnor_result=5ad01159 sum=first layer : xnor_result=d24e6b65 sum=first layer : xnor_result=b77eec6f sum=first layer : xnor_result=cf6a2cb7 sum=first layer : xnor_result=8b7606fd sum=first layer : xnor_result=62e9a454 sum=first layer : xnor_result=6eab18f3 sum=first layer : xnor_result=d2e4e27a sum=first layer : xnor_result=e9d72c83 sum=first layer : xnor_result=c4bb93c0 sum=first layer : xnor_result=10edc6ac sum=first layer : xnor_result=a5bf3daf sum=first layer : xnor_result=d99c3a50 sum=first layer : xnor_result=b971dbb3 sum=first layer : xnor_result=ce9af77d sum=first layer : xnor_result=e777d44 sum=first layer : xnor_result=ecdf6c75 sum=first layer : xnor_result=52e6e188 sum=first layer : xnor_result=8567591a sum=first layer : xnor_result=3f30a69f sum=first layer : xnor_result=60ed2db3 sum=first layer : xnor_result=ed011a29 sum=first layer : xnor_result=e9cdd761 sum=first layer : xnor_result=551d72f8 sum=first layer : xnor_result=c04b1a90 sum=first layer : xnor_result=2ed222c4 sum=first layer : xnor_result=6542a57a sum=first layer : xnor_result=ac01984 sum=first layer : xnor_result=61dd1d33 sum=first layer : xnor_result=e15614ad sum=first layer : xnor_result=2ba674db sum=first layer : xnor_result=4a1eff12 sum=first layer : xnor_result=779a34c9 sum=first layer : xnor_result=3f9bddfa sum=first layer : xnor_result=f9c1b762 sum=first layer : xnor_result=1b027c7e sum=first layer : xnor_result=c06cdbbb sum=first layer : xnor_result=b1e59d76 sum=first layer : xnor_result=513a5e0c sum=first layer : xnor_result=f639400 sum=first layer : xnor_result=f493a132 sum=first layer : xnor_result=3a539696 sum=first layer : xnor_result=f0c83d34 sum=first layer : xnor_result=89b9e88c sum=first layer : xnor_result=cdaf6113 sum=first layer : xnor_result=3d19ae01 sum=first layer : xnor_result=d8c9e807 sum=first layer : xnor_result=28dc39bb sum=first layer : xnor_result=607b7f59 sum=first layer : xnor_result=79cad2bb sum=first layer : xnor_result=2fbf984b sum=first layer : xnor_result=1ad5f85 sum=first layer : xnor_result=87d46313 sum=first layer : xnor_result=633b814a sum=first layer : xnor_result=80c4e2c2 sum=first layer : xnor_result=7b1918cc sum=first layer : xnor_result=35004a3e sum=first layer : xnor_result=a1e1576a sum=first layer : xnor_result=ef52cf11 sum=Layer1_out[0]  before processing sum_out = 403
+Layer1_out[1]  before processing sum_out = 425
+Layer1_out[0] = 1
+Layer1_out[0]  after processing sum_out = 22
+Layer1_out[1] = 1
+Layer1_out[1]  after processing sum_out = 66
+Layer1_out[2] = -1
+Layer1_out[2]  after processing sum_out = -2
+Layer1_out[3] = 1
+Layer1_out[3]  after processing sum_out = 116
+Layer1_out[4] = 1
+Layer1_out[4]  after processing sum_out = 64
+Layer2_out[0] = 1
+Layer2_out[1] = -1
+Layer2_out[2] = 1
+Layer2_out[3] = -1
+Layer2_out[4] = -1
+Layer2_out[5] = 1
+Layer2_out[6] = 1
+Layer2_out[7] = 1
+Layer2_out[8] = 1
+Layer2_out[9] = 1
+Layer2_out[10] = 1
+Layer2_out[11] = 1
+Layer2_out[12] = 1
+Layer2_out[13] = 1
+Layer2_out[14] = -1
+Layer2_out[15] = 1
+Layer2_out[16] = -1
+Layer2_out[17] = -1
+Layer2_out[18] = -1
+Layer2_out[19] = 1
+Layer2_out[20] = 1
+Layer2_out[21] = -1
+Layer2_out[22] = -1
+Layer2_out[23] = 1
+Layer2_out[24] = -1
+Layer2_out[25] = -1
+Layer2_out[26] = 1
+Layer2_out[27] = 1
+Layer2_out[28] = 1
+Layer2_out[29] = -1
+Layer2_out[30] = -1
+Layer2_out[31] = 1
+Layer2_out[32] = -1
+Layer2_out[33] = -1
+Layer2_out[34] = -1
+Layer2_out[35] = -1
+Layer2_out[36] = -1
+Layer2_out[37] = 1
+Layer2_out[38] = 1
+Layer2_out[39] = -1
+Layer2_out[40] = 1
+Layer2_out[41] = 1
+Layer2_out[42] = -1
+Layer2_out[43] = 1
+Layer2_out[44] = 1
+Layer2_out[45] = 1
+Layer2_out[46] = -1
+Layer2_out[47] = 1
+Layer2_out[48] = 1
+Layer2_out[49] = 1
+Layer2_out[50] = -1
+Layer2_out[51] = 1
+Layer2_out[52] = -1
+Layer2_out[53] = 1
+Layer2_out[54] = 1
+Layer2_out[55] = -1
+Layer2_out[56] = 1
+Layer2_out[57] = 1
+Layer2_out[58] = 1
+Layer2_out[59] = 1
+Layer2_out[60] = 1
+Layer2_out[61] = 1
+Layer2_out[62] = 1
+Layer2_out[63] = 1
+Final output[0] = -6
+Final output[1] = 16
+Final output[2] = -4
+Final output[3] = -6
+Final output[4] = -4
+Final output[5] = 4
+Final output[6] = -10
+Final output[7] = 0
+Final output[8] = -8
+Final output[9] = 14
+
+
+ *******************
+Sample weights:
+w1[0] = 1369938329
+w2[0] = 1913607555
+w3[0] = 3898795476
+w1[1] = 338570864
+w2[1] = 675556588
+w3[1] = 3841654544
+w1[2] = 3449824829
+w2[2] = 3902637308
+w3[2] = 1999377659
+w1[3] = 3240895963
+w2[3] = 1303398415
+w3[3] = 478627577
+w1[4] = 1476599616
+w2[4] = 2804841594
+w3[4] = 2610578576
+first layer : xnor_result=51a79999 sum=first layer : xnor_result=93ffd655 sum=first layer : xnor_result=8138e37b sum=first layer : xnor_result=b44b7162 sum=first layer : xnor_result=7c0e9614 sum=first layer : xnor_result=1b87051b sum=first layer : xnor_result=6a73dd41 sum=first layer : xnor_result=f494ef4e sum=first layer : xnor_result=54bb9211 sum=first layer : xnor_result=ae07e25d sum=first layer : xnor_result=3b137e06 sum=first layer : xnor_result=324906f1 sum=first layer : xnor_result=d45e68bd sum=first layer : xnor_result=d521a56 sum=first layer : xnor_result=1257ddd3 sum=first layer : xnor_result=58f131fe sum=first layer : xnor_result=6c12163c sum=first layer : xnor_result=dfe36ea3 sum=first layer : xnor_result=1f3e346a sum=first layer : xnor_result=143e16aa sum=first layer : xnor_result=14d5fc50 sum=first layer : xnor_result=a6b4cbff sum=first layer : xnor_result=d6eccd2f sum=first layer : xnor_result=9ef90027 sum=first layer : xnor_result=9007e166 sum=first layer : xnor_result=760fa71c sum=first layer : xnor_result=171b8f92 sum=first layer : xnor_result=de650c2d sum=first layer : xnor_result=b0a67a3d sum=first layer : xnor_result=33bc36f6 sum=first layer : xnor_result=eddfc1e1 sum=first layer : xnor_result=d7f27f76 sum=first layer : xnor_result=9d6d27f6 sum=first layer : xnor_result=44d968ca sum=first layer : xnor_result=e8ca0027 sum=first layer : xnor_result=61377eca sum=first layer : xnor_result=39d6f15d sum=first layer : xnor_result=b882a8e2 sum=first layer : xnor_result=7910301 sum=first layer : xnor_result=9f4b16df sum=first layer : xnor_result=f2acccb8 sum=first layer : xnor_result=b2de2d1a sum=first layer : xnor_result=b4701481 sum=first layer : xnor_result=8ad4374a sum=first layer : xnor_result=d30b60f4 sum=first layer : xnor_result=61914d1c sum=first layer : xnor_result=8d71854d sum=first layer : xnor_result=9fb0f8ea sum=first layer : xnor_result=a1661892 sum=first layer : xnor_result=3cf8df5d sum=first layer : xnor_result=4c0cb54 sum=first layer : xnor_result=7fee7758 sum=first layer : xnor_result=fed85424 sum=first layer : xnor_result=d4be9aa5 sum=first layer : xnor_result=4a8c95c7 sum=first layer : xnor_result=533dfbe3 sum=first layer : xnor_result=a099d17f sum=first layer : xnor_result=d7398162 sum=first layer : xnor_result=f6dc3a71 sum=first layer : xnor_result=ffece902 sum=first layer : xnor_result=b0660082 sum=first layer : xnor_result=65993d9f sum=first layer : xnor_result=5ff2ccfb sum=first layer : xnor_result=4bbe3407 sum=first layer : xnor_result=8086422 sum=first layer : xnor_result=aef9ac16 sum=first layer : xnor_result=e542c89 sum=first layer : xnor_result=42960833 sum=first layer : xnor_result=d2e787be sum=first layer : xnor_result=5ad01159 sum=first layer : xnor_result=d24e6b65 sum=first layer : xnor_result=b77eec6f sum=first layer : xnor_result=cf6a2cb7 sum=first layer : xnor_result=8b7606fd sum=first layer : xnor_result=62e9a454 sum=first layer : xnor_result=6eab18f3 sum=first layer : xnor_result=d2e4e27a sum=first layer : xnor_result=e9d72c83 sum=first layer : xnor_result=c4bb93c0 sum=first layer : xnor_result=10edc6ac sum=first layer : xnor_result=a5bf3daf sum=first layer : xnor_result=d99c3a50 sum=first layer : xnor_result=b971dbb3 sum=first layer : xnor_result=ce9af77d sum=first layer : xnor_result=e777d44 sum=first layer : xnor_result=ecdf6c75 sum=first layer : xnor_result=52e6e188 sum=first layer : xnor_result=8567591a sum=first layer : xnor_result=3f30a69f sum=first layer : xnor_result=60ed2db3 sum=first layer : xnor_result=ed011a29 sum=first layer : xnor_result=e9cdd761 sum=first layer : xnor_result=551d72f8 sum=first layer : xnor_result=c04b1a90 sum=first layer : xnor_result=2ed222c4 sum=first layer : xnor_result=6542a57a sum=first layer : xnor_result=ac01984 sum=first layer : xnor_result=61dd1d33 sum=first layer : xnor_result=e15614ad sum=first layer : xnor_result=2ba674db sum=first layer : xnor_result=4a1eff12 sum=first layer : xnor_result=779a34c9 sum=first layer : xnor_result=3f9bddfa sum=first layer : xnor_result=f9c1b762 sum=first layer : xnor_result=1b027c7e sum=first layer : xnor_result=c06cdbbb sum=first layer : xnor_result=b1e59d76 sum=first layer : xnor_result=513a5e0c sum=first layer : xnor_result=f639400 sum=first layer : xnor_result=f493a132 sum=first layer : xnor_result=3a539696 sum=first layer : xnor_result=f0c83d34 sum=first layer : xnor_result=89b9e88c sum=first layer : xnor_result=cdaf6113 sum=first layer : xnor_result=3d19ae01 sum=first layer : xnor_result=d8c9e807 sum=first layer : xnor_result=28dc39bb sum=first layer : xnor_result=607b7f59 sum=first layer : xnor_result=79cad2bb sum=first layer : xnor_result=2fbf984b sum=first layer : xnor_result=1ad5f85 sum=first layer : xnor_result=87d46313 sum=first layer : xnor_result=633b814a sum=first layer : xnor_result=80c4e2c2 sum=first layer : xnor_result=7b1918cc sum=first layer : xnor_result=35004a3e sum=first layer : xnor_result=a1e1576a sum=first layer : xnor_result=ef52cf11 sum=Layer1_out[0]  before processing sum_out = 400
+Layer1_out[1]  before processing sum_out = 420
+Layer1_out[0] = 1
+Layer1_out[0]  after processing sum_out = 16
+Layer1_out[1] = 1
+Layer1_out[1]  after processing sum_out = 56
+Layer1_out[2] = 1
+Layer1_out[2]  after processing sum_out = 176
+Layer1_out[3] = 1
+Layer1_out[3]  after processing sum_out = 30
+Layer1_out[4] = 1
+Layer1_out[4]  after processing sum_out = 74
+Layer2_out[0] = 1
+Layer2_out[1] = -1
+Layer2_out[2] = 1
+Layer2_out[3] = -1
+Layer2_out[4] = -1
+Layer2_out[5] = 1
+Layer2_out[6] = 1
+Layer2_out[7] = -1
+Layer2_out[8] = 1
+Layer2_out[9] = 1
+Layer2_out[10] = 1
+Layer2_out[11] = 1
+Layer2_out[12] = 1
+Layer2_out[13] = -1
+Layer2_out[14] = -1
+Layer2_out[15] = 1
+Layer2_out[16] = -1
+Layer2_out[17] = -1
+Layer2_out[18] = -1
+Layer2_out[19] = 1
+Layer2_out[20] = 1
+Layer2_out[21] = -1
+Layer2_out[22] = -1
+Layer2_out[23] = -1
+Layer2_out[24] = -1
+Layer2_out[25] = 1
+Layer2_out[26] = 1
+Layer2_out[27] = 1
+Layer2_out[28] = 1
+Layer2_out[29] = 1
+Layer2_out[30] = 1
+Layer2_out[31] = 1
+Layer2_out[32] = -1
+Layer2_out[33] = -1
+Layer2_out[34] = 1
+Layer2_out[35] = -1
+Layer2_out[36] = 1
+Layer2_out[37] = -1
+Layer2_out[38] = 1
+Layer2_out[39] = -1
+Layer2_out[40] = 1
+Layer2_out[41] = -1
+Layer2_out[42] = -1
+Layer2_out[43] = -1
+Layer2_out[44] = -1
+Layer2_out[45] = -1
+Layer2_out[46] = 1
+Layer2_out[47] = 1
+Layer2_out[48] = 1
+Layer2_out[49] = -1
+Layer2_out[50] = -1
+Layer2_out[51] = 1
+Layer2_out[52] = -1
+Layer2_out[53] = 1
+Layer2_out[54] = 1
+Layer2_out[55] = -1
+Layer2_out[56] = 1
+Layer2_out[57] = -1
+Layer2_out[58] = 1
+Layer2_out[59] = 1
+Layer2_out[60] = -1
+Layer2_out[61] = -1
+Layer2_out[62] = 1
+Layer2_out[63] = 1
+Final output[0] = -2
+Final output[1] = 4
+Final output[2] = 4
+Final output[3] = -2
+Final output[4] = -8
+Final output[5] = -8
+Final output[6] = -14
+Final output[7] = -4
+Final output[8] = 0
+Final output[9] = 6
+
+
+ *******************
+Sample weights:
+w1[0] = 1369938329
+w2[0] = 1913607555
+w3[0] = 3898795476
+w1[1] = 338570864
+w2[1] = 675556588
+w3[1] = 3841654544
+w1[2] = 3449824829
+w2[2] = 3902637308
+w3[2] = 1999377659
+w1[3] = 3240895963
+w2[3] = 1303398415
+w3[3] = 478627577
+w1[4] = 1476599616
+w2[4] = 2804841594
+w3[4] = 2610578576
+first layer : xnor_result=51a79999 sum=first layer : xnor_result=93ffd655 sum=first layer : xnor_result=8138e37b sum=first layer : xnor_result=b44b7162 sum=first layer : xnor_result=7c0e9614 sum=first layer : xnor_result=1b87051b sum=first layer : xnor_result=6a73dd41 sum=first layer : xnor_result=f494ef4e sum=first layer : xnor_result=54bb9211 sum=first layer : xnor_result=ae07e25d sum=first layer : xnor_result=3b137e06 sum=first layer : xnor_result=324906f1 sum=first layer : xnor_result=d45e68bd sum=first layer : xnor_result=d521a56 sum=first layer : xnor_result=1257ddd3 sum=first layer : xnor_result=58f131fe sum=first layer : xnor_result=6c12163c sum=first layer : xnor_result=dfe36ea3 sum=first layer : xnor_result=1f3e346a sum=first layer : xnor_result=143e16aa sum=first layer : xnor_result=14d5fc50 sum=first layer : xnor_result=a6b4cbff sum=first layer : xnor_result=d6eccd2f sum=first layer : xnor_result=9ef90027 sum=first layer : xnor_result=9007e166 sum=first layer : xnor_result=760fa71c sum=first layer : xnor_result=171b8f92 sum=first layer : xnor_result=de650c2d sum=first layer : xnor_result=b0a67a3d sum=first layer : xnor_result=33bc36f6 sum=first layer : xnor_result=eddfc1e1 sum=first layer : xnor_result=d7f27f76 sum=first layer : xnor_result=9d6d27f6 sum=first layer : xnor_result=44d968ca sum=first layer : xnor_result=e8ca0027 sum=first layer : xnor_result=61377eca sum=first layer : xnor_result=39d6f15d sum=first layer : xnor_result=b882a8e2 sum=first layer : xnor_result=7910301 sum=first layer : xnor_result=9f4b16df sum=first layer : xnor_result=f2acccb8 sum=first layer : xnor_result=b2de2d1a sum=first layer : xnor_result=b4701481 sum=first layer : xnor_result=8ad4374a sum=first layer : xnor_result=d30b60f4 sum=first layer : xnor_result=61914d1c sum=first layer : xnor_result=8d71854d sum=first layer : xnor_result=9fb0f8ea sum=first layer : xnor_result=a1661892 sum=first layer : xnor_result=3cf8df5d sum=first layer : xnor_result=4c0cb54 sum=first layer : xnor_result=7fee7758 sum=first layer : xnor_result=fed85424 sum=first layer : xnor_result=d4be9aa5 sum=first layer : xnor_result=4a8c95c7 sum=first layer : xnor_result=533dfbe3 sum=first layer : xnor_result=a099d17f sum=first layer : xnor_result=d7398162 sum=first layer : xnor_result=f6dc3a71 sum=first layer : xnor_result=ffece902 sum=first layer : xnor_result=b0660082 sum=first layer : xnor_result=65993d9f sum=first layer : xnor_result=5ff2ccfb sum=first layer : xnor_result=4bbe3407 sum=first layer : xnor_result=8086422 sum=first layer : xnor_result=aef9ac16 sum=first layer : xnor_result=e542c89 sum=first layer : xnor_result=42960833 sum=first layer : xnor_result=d2e787be sum=first layer : xnor_result=5ad01159 sum=first layer : xnor_result=d24e6b65 sum=first layer : xnor_result=b77eec6f sum=first layer : xnor_result=cf6a2cb7 sum=first layer : xnor_result=8b7606fd sum=first layer : xnor_result=62e9a454 sum=first layer : xnor_result=6eab18f3 sum=first layer : xnor_result=d2e4e27a sum=first layer : xnor_result=e9d72c83 sum=first layer : xnor_result=c4bb93c0 sum=first layer : xnor_result=10edc6ac sum=first layer : xnor_result=a5bf3daf sum=first layer : xnor_result=d99c3a50 sum=first layer : xnor_result=b971dbb3 sum=first layer : xnor_result=ce9af77d sum=first layer : xnor_result=e777d44 sum=first layer : xnor_result=ecdf6c75 sum=first layer : xnor_result=52e6e188 sum=first layer : xnor_result=8567591a sum=first layer : xnor_result=3f30a69f sum=first layer : xnor_result=60ed2db3 sum=first layer : xnor_result=ed011a29 sum=first layer : xnor_result=e9cdd761 sum=first layer : xnor_result=551d72f8 sum=first layer : xnor_result=c04b1a90 sum=first layer : xnor_result=2ed222c4 sum=first layer : xnor_result=6542a57a sum=first layer : xnor_result=ac01984 sum=first layer : xnor_result=61dd1d33 sum=first layer : xnor_result=e15614ad sum=first layer : xnor_result=2ba674db sum=first layer : xnor_result=4a1eff12 sum=first layer : xnor_result=779a34c9 sum=first layer : xnor_result=3f9bddfa sum=first layer : xnor_result=f9c1b762 sum=first layer : xnor_result=1b027c7e sum=first layer : xnor_result=c06cdbbb sum=first layer : xnor_result=b1e59d76 sum=first layer : xnor_result=513a5e0c sum=first layer : xnor_result=f639400 sum=first layer : xnor_result=f493a132 sum=first layer : xnor_result=3a539696 sum=first layer : xnor_result=f0c83d34 sum=first layer : xnor_result=89b9e88c sum=first layer : xnor_result=cdaf6113 sum=first layer : xnor_result=3d19ae01 sum=first layer : xnor_result=d8c9e807 sum=first layer : xnor_result=28dc39bb sum=first layer : xnor_result=607b7f59 sum=first layer : xnor_result=79cad2bb sum=first layer : xnor_result=2fbf984b sum=first layer : xnor_result=1ad5f85 sum=first layer : xnor_result=87d46313 sum=first layer : xnor_result=633b814a sum=first layer : xnor_result=80c4e2c2 sum=first layer : xnor_result=7b1918cc sum=first layer : xnor_result=35004a3e sum=first layer : xnor_result=a1e1576a sum=first layer : xnor_result=ef52cf11 sum=Layer1_out[0]  before processing sum_out = 425
+Layer1_out[1]  before processing sum_out = 401
+Layer1_out[0] = 1
+Layer1_out[0]  after processing sum_out = 66
+Layer1_out[1] = 1
+Layer1_out[1]  after processing sum_out = 18
+Layer1_out[2] = 1
+Layer1_out[2]  after processing sum_out = 98
+Layer1_out[3] = 1
+Layer1_out[3]  after processing sum_out = 40
+Layer1_out[4] = 1
+Layer1_out[4]  after processing sum_out = 108
+Layer2_out[0] = 1
+Layer2_out[1] = -1
+Layer2_out[2] = 1
+Layer2_out[3] = -1
+Layer2_out[4] = -1
+Layer2_out[5] = 1
+Layer2_out[6] = 1
+Layer2_out[7] = -1
+Layer2_out[8] = 1
+Layer2_out[9] = 1
+Layer2_out[10] = -1
+Layer2_out[11] = 1
+Layer2_out[12] = 1
+Layer2_out[13] = -1
+Layer2_out[14] = -1
+Layer2_out[15] = 1
+Layer2_out[16] = -1
+Layer2_out[17] = -1
+Layer2_out[18] = -1
+Layer2_out[19] = 1
+Layer2_out[20] = 1
+Layer2_out[21] = -1
+Layer2_out[22] = -1
+Layer2_out[23] = 1
+Layer2_out[24] = -1
+Layer2_out[25] = -1
+Layer2_out[26] = 1
+Layer2_out[27] = -1
+Layer2_out[28] = 1
+Layer2_out[29] = -1
+Layer2_out[30] = 1
+Layer2_out[31] = 1
+Layer2_out[32] = -1
+Layer2_out[33] = -1
+Layer2_out[34] = 1
+Layer2_out[35] = -1
+Layer2_out[36] = 1
+Layer2_out[37] = 1
+Layer2_out[38] = -1
+Layer2_out[39] = -1
+Layer2_out[40] = 1
+Layer2_out[41] = 1
+Layer2_out[42] = -1
+Layer2_out[43] = 1
+Layer2_out[44] = -1
+Layer2_out[45] = 1
+Layer2_out[46] = -1
+Layer2_out[47] = 1
+Layer2_out[48] = 1
+Layer2_out[49] = 1
+Layer2_out[50] = -1
+Layer2_out[51] = -1
+Layer2_out[52] = -1
+Layer2_out[53] = 1
+Layer2_out[54] = 1
+Layer2_out[55] = -1
+Layer2_out[56] = 1
+Layer2_out[57] = -1
+Layer2_out[58] = 1
+Layer2_out[59] = 1
+Layer2_out[60] = 1
+Layer2_out[61] = -1
+Layer2_out[62] = -1
+Layer2_out[63] = 1
+Final output[0] = 4
+Final output[1] = 6
+Final output[2] = 6
+Final output[3] = 0
+Final output[4] = -2
+Final output[5] = -2
+Final output[6] = -12
+Final output[7] = -6
+Final output[8] = 6
+Final output[9] = 0
+-----------------------------------------------------------
+Verifying the sample: Sample 1
+Wrong output: Expected: -2 Obtained: -6
+Wrong output: Expected: 4 Obtained: 16
+Wrong output: Expected: -8 Obtained: -4
+Wrong output: Expected: 14 Obtained: -6
+Wrong output: Expected: 0 Obtained: 4
+Wrong output: Expected: -42 Obtained: -10
+Wrong output: Expected: 48 Obtained: 0
+Wrong output: Expected: -4 Obtained: -8
+Wrong output: Expected: 2 Obtained: 14
+Sample: Sample 1 FAILED
+-----------------------------------------------------------
+Verifying the sample: Sample 1
+Wrong output: Expected: 2 Obtained: -2
+Wrong output: Expected: 0 Obtained: 4
+Wrong output: Expected: 48 Obtained: 4
+Wrong output: Expected: 10 Obtained: -2
+Wrong output: Expected: -20 Obtained: -8
+Wrong output: Expected: 4 Obtained: -8
+Wrong output: Expected: 2 Obtained: -14
+Wrong output: Expected: -16 Obtained: -4
+Wrong output: Expected: 4 Obtained: 0
+Wrong output: Expected: -14 Obtained: 6
+Sample: Sample 1 FAILED
+-----------------------------------------------------------
+Verifying the sample: Sample 1
+Wrong output: Expected: -16 Obtained: 4
+Wrong output: Expected: 42 Obtained: 6
+Wrong output: Expected: 2 Obtained: 6
+Wrong output: Expected: 4 Obtained: 0
+Wrong output: Expected: -14 Obtained: -2
+Wrong output: Expected: 8 Obtained: -12
+Wrong output: Expected: 2 Obtained: -6
+Wrong output: Expected: 14 Obtained: 6
+Wrong output: Expected: -8 Obtained: 0
+Sample: Sample 1 FAILED
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
